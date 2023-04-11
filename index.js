@@ -12,7 +12,7 @@ async function loadApp() {
   signer = provider.getSigner();
   if (!signer) window.location.reload();
   await provider.send("eth_requestAccounts", []);
-  processAction();
+ // processAction();
 }
 
 function processAction() {
