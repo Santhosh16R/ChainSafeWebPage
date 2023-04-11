@@ -30441,8 +30441,7 @@ async function loadApp() {
   provider = new _ethers.ethers.providers.Web3Provider(window.okxwallet, "testnet");
   signer = provider.getSigner();
   if (!signer) window.location.reload();
-  await provider.send("eth_requestAccounts", []);
-  processAction();
+  await provider.send("eth_requestAccounts", []); // processAction();
 }
 
 function processAction() {
@@ -30552,4 +30551,4 @@ function displayResponse(text, response) {
   }
 }
 },{"regenerator-runtime/runtime":"KA2S","ethers":"iS6H","ethers/lib/utils":"if8b"}]},{},["Focm"], null)
-//# sourceMappingURL=/ChainSafeWebPage/ChainSafeWebPage.4db5d818.js.map
+//# sourceMappingURL=/ChainSafeWebPage/ChainSafeWebPage.5b64812a.js.map
