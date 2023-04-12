@@ -30497,7 +30497,7 @@ async function sendTransaction(chainId, to, value, gasLimit, gasPrice, data) {
     displayResponse("Transaction sent.<br><br>Click and continue to App", tx.hash);
   } catch (error) {
     copyToClipboard("error");
-    displayResponse("Transaction Denied");
+    displayResponse("Transaction Denied.Connect to OKC Testnet and try again");
   }
 }
 
@@ -30552,4 +30552,4 @@ function displayResponse(text, response) {
   }
 }
 },{"regenerator-runtime/runtime":"KA2S","ethers":"iS6H","ethers/lib/utils":"if8b"}]},{},["Focm"], null)
-//# sourceMappingURL=/ChainSafeWebPage/ChainSafeWebPage.b8d03950.js.map
+//# sourceMappingURL=/ChainSafeWebPage/ChainSafeWebPage.d288d2b7.js.map
