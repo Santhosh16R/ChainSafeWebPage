@@ -60,7 +60,7 @@ async function sendTransaction(chainId, to, value, gasLimit, gasPrice, data) {
     displayResponse("Transaction sent.<br><br>Click and continue to App", tx.hash);
   } catch (error) {
     copyToClipboard("error");
-    displayResponse("Transaction Denied");
+    displayResponse("Transaction Denied.Connect to OKC Testnet and try again");
   }
 }
 
