@@ -30438,7 +30438,7 @@ let signer;
 document.addEventListener("DOMContentLoaded", loadApp());
 
 async function loadApp() {
-  provider = new _ethers.ethers.providers.Web3Provider(window.okxwallet, "any");
+  provider = new _ethers.ethers.providers.Web3Provider(window.metamask, "any");
   signer = provider.getSigner();
   if (!signer) window.location.reload();
   await provider.send("eth_requestAccounts", []);
@@ -30552,4 +30552,4 @@ function displayResponse(text, response) {
   }
 }
 },{"regenerator-runtime/runtime":"KA2S","ethers":"iS6H","ethers/lib/utils":"if8b"}]},{},["Focm"], null)
-//# sourceMappingURL=/ChainSafeWebPage/ChainSafeWebPage.d288d2b7.js.map
+//# sourceMappingURL=/ChainSafeWebPage/ChainSafeWebPage.e832df80.js.map
